@@ -1,0 +1,259 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true" 
+    android:orientation="vertical"
+    android:id="@+id/home_main_background"
+    android:background="@drawable/home_back">
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/home_top_background">
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="10dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+            <com.example.tinylove.View.RoundImageView
+                android:id="@+id/home_my_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+            	android:scaleType="centerCrop"
+            	imagecontrol:border_inside_color="#ffffff"
+                imagecontrol:border_outside_color="@color/themeColor"
+            	imagecontrol:border_thickness="1dp"
+           		android:src="@drawable/new_head_photo_male" />
+            <View 
+                android:layout_width="wrap_content"
+                android:layout_height="6dp"/>
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView 
+                    android:id="@+id/home_my_weather_picture"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/sunny"
+                	android:clickable="true"/>
+                <TextView 
+                    android:id="@+id/home_my_weather_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text=" · 29℃ · 沈阳"
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                	android:clickable="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我们在一起 "
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+            <TextView 
+                android:id="@+id/home_text_days"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="250"
+                android:textSize="30sp"
+                android:textStyle="bold"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 天"
+                android:textColor="#ffffff"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:gravity="right"
+            android:orientation="vertical">
+            <com.example.tinylove.View.RoundImageView
+                android:id="@+id/home_mycouple_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+            	android:scaleType="centerCrop"
+            	imagecontrol:border_inside_color="#ffffff"
+                imagecontrol:border_outside_color="@color/themeColor"
+            	imagecontrol:border_thickness="1dp"
+           		android:src="@drawable/new_head_photo_female" />
+            <LinearLayout 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView 
+                    android:id="@+id/home_mycouple_weather_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="庆阳 · 32℃ · "
+                    android:textColor="#ffffff"
+                    android:textSize="14sp"
+                	android:clickable="true"/>
+                <ImageView 
+                    android:id="@+id/home_mycouple_weather_picture"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/cloudy"
+                	android:clickable="true"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+    </RelativeLayout>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <LinearLayout 
+            android:id="@+id/home_L"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="70dp"
+            android:gravity="center_horizontal">
+            <LinearLayout 
+                android:id="@+id/home_ll_anni"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/home_bottom_back"
+                android:clickable="true">
+                <ImageView 
+                    android:id="@+id/home_btn_anni"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/home_anniversary"
+               		android:clickable="true"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="纪念日"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColor"/>
+            </LinearLayout>
+            
+            <View android:layout_width="14dp"
+                android:layout_height="match_parent"/>
+            
+            <LinearLayout 
+                android:id="@+id/home_ll_wish"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/home_bottom_back">
+                <ImageView 
+                    android:id="@+id/home_btn_wish"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/home_wish"
+                	android:clickable="true"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="情侣愿望"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColor"/>
+            </LinearLayout>
+            
+            <View android:layout_width="14dp"
+                android:layout_height="match_parent"/>
+            
+            <LinearLayout 
+                android:id="@+id/home_ll_phone"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/home_bottom_back"
+                android:clickable="true">
+                <ImageView 
+                    android:id="@+id/home_btn_phone"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/home_phone"
+                	android:clickable="true"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="联系TA"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColor"/>
+            </LinearLayout>
+            
+            <View android:layout_width="14dp"
+                android:layout_height="match_parent"/>
+            
+            <LinearLayout 
+                android:id="@+id/home_ll_check"
+                android:layout_width="70dp"
+                android:layout_height="60dp"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/home_bottom_back"
+                android:clickable="true">
+                <ImageView 
+                    android:id="@+id/home_btn_check"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/home_check"
+                	android:clickable="true"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每日打卡"
+                    android:textSize="10sp"
+                    android:textColor="@color/textColor"/>
+            </LinearLayout>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/home_L"
+            android:layout_marginBottom="20dp"
+            android:gravity="right">
+	        <LinearLayout 
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+	            android:gravity="center"
+	            android:clickable="true"
+	            android:background="@drawable/home_choose_picture_back">
+	            <ImageView 
+	                android:id="@+id/home_change_back"
+	                android:layout_width="20dp"
+	                android:layout_height="20dp"
+	                android:src="@drawable/picture"/>
+	        </LinearLayout>
+            <View
+	             android:layout_width="20dp"
+	             android:layout_height="20dp"/>
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

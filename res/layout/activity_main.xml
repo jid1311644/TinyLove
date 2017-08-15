@@ -1,0 +1,95 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+    tools:context="com.example.tinylove.Activity.MainActivity" >
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout 
+        android:id="@+id/L"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#ffffff">
+        
+        <LinearLayout 
+            android:id="@+id/main_rgl_home"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true">
+            <Button 
+	            android:id="@+id/main_rb_home"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+				android:background="@drawable/homepage_press"/>
+            <TextView 
+                android:id="@+id/main_rbtext_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首页"
+                android:textSize="12sp"
+                android:textColor="@color/themeColor"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/main_rgl_time"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true">
+            <Button 
+	            android:id="@+id/main_rb_time"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+				android:background="@drawable/time_nopress"/>
+            <TextView 
+                android:id="@+id/main_rbtext_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="时光"
+                android:textSize="12sp"
+                android:textColor="@color/textColor"/>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/main_rgl_set"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:clickable="true">
+            <Button 
+	            android:id="@+id/main_rb_set"
+	            android:layout_width="30dp"
+	            android:layout_height="30dp"
+				android:background="@drawable/set_nopress"/>
+            <TextView 
+                android:id="@+id/main_rbtext_set"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:textSize="12sp"
+                android:textColor="@color/textColor"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/L"
+        android:background="@color/lineColor"/>
+
+</RelativeLayout>

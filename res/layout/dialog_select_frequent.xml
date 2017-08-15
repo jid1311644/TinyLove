@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#ffffff"
+	android:orientation="vertical"
+    tools:context="com.example.tinylove.SelectFrequentDialog" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="    请选择提醒频率" 
+        android:textColor="@color/themeColor"
+        android:textSize="18sp"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/themeColor"/>
+    
+    <TextView
+        android:id="@+id/add_anni_remind_select_frequent_none"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="  无" 
+        android:textColor="@color/anniTextColor"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:background="@drawable/btn_selector"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/pressColor"/>
+    
+    <TextView
+        android:id="@+id/add_anni_remind_select_frequent_week"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="  每周" 
+        android:textColor="@color/anniTextColor"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:background="@drawable/btn_selector"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/pressColor"/>
+    
+    <TextView
+        android:id="@+id/add_anni_remind_select_frequent_month"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="  每月" 
+        android:textColor="@color/anniTextColor"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:background="@drawable/btn_selector"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/pressColor"/>
+    
+    <TextView
+        android:id="@+id/add_anni_remind_select_frequent_year"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:text="  每年" 
+        android:textColor="@color/anniTextColor"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:background="@drawable/btn_selector"/>
+
+</LinearLayout>

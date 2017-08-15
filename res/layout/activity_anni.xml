@@ -1,0 +1,126 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/themeColor"
+    android:orientation="vertical"
+    tools:context="com.example.tinylove.AnniActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="@color/themeColor">
+        <ImageView
+            android:id="@+id/anni_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/icon_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="纪念日"
+            android:layout_centerInParent="true"/>
+        <ImageView
+            android:id="@+id/anni_more"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/anni_more" />
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backColor"
+        android:orientation="vertical">
+        
+        <RelativeLayout 
+            android:id="@+id/anni_rl_top"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/anni_header_bg">
+            <LinearLayout 
+                android:id="@+id/anni_ll1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="20dp">
+                <TextView 
+                    android:id="@+id/anni_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的生日还有"
+                    android:textStyle="bold"
+                	android:textColor="@color/anniTextColor"
+                    android:textSize="16sp"/>
+                <View 
+                    android:layout_width="1dp"
+                    android:layout_height="10dp"/>
+                <TextView 
+                    android:id="@+id/anni_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="目标日:2017年09月10日 周一"
+                    android:textColor="#af707070"
+                    android:textSize="14sp"/>
+            </LinearLayout>
+        
+            <ImageView 
+                android:id="@+id/anni_idays"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="20dp"
+                android:src="@drawable/anni_header_days_icon"/>
+            <View 
+                android:layout_width="6dp"
+                android:layout_height="match_parent"/>
+            <TextView 
+                android:id="@+id/anni_days"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@id/anni_idays"
+                android:text="57"
+                android:textSize="66sp"
+                android:textColor="@color/anniTextColor"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+        
+        <View 
+            android:layout_width="match_parent"
+        	android:layout_height="10dp"/>
+        
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View 
+		        android:layout_width="match_parent"
+		        android:layout_height="0.8dp"
+		        android:background="#e9e9e9"
+		        android:layout_alignParentTop="true"/>
+		    <android.support.v7.widget.RecyclerView
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:layout_centerInParent="true"
+		        android:id="@+id/anni_recycler"
+				android:layout_alignParentBottom="true"
+		        android:scrollbars="vertical"/>
+        </RelativeLayout>
+        
+    </LinearLayout>
+    
+    
+
+</LinearLayout>

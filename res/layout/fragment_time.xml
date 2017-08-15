@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#ffffff" >
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    
+    <ImageView 
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:src="@drawable/time_title"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    
+    <RelativeLayout 
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:background="@drawable/picture_background">
+        <com.example.tinylove.View.PictureView
+	        android:id="@+id/time_picture"
+	        android:layout_width="280dp"
+	        android:layout_height="380dp"
+			android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView 
+        android:id="@+id/time_picture_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择图片滚动样式"
+        android:textSize="14sp"
+        android:textColor="@color/themeColor"
+        android:clickable="true"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <ImageView 
+            android:id="@+id/time_picture_add"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/time_add"
+            android:clickable="true"/>
+        <View 
+            android:layout_width="120dp"
+            android:layout_height="50dp"/>
+        <ImageView 
+            android:id="@+id/time_picture_delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/time_delete"
+            android:clickable="true"/>
+    </LinearLayout>
+
+</LinearLayout>

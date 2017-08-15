@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    
+    <LinearLayout 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true">
+	    <ImageView 
+	        android:layout_width="80dp"
+	        android:layout_height="80dp"
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerCrop"
+	        android:background="@drawable/ic_launcher"/>
+	    <View 
+	        android:layout_width="80dp"
+	        android:layout_height="320dp"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/viewbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+        <Button 
+            android:id="@+id/signin"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_login_shape"
+            android:text="注册"
+            android:textSize="16sp"
+            android:textColor="#ffffff"/>
+        <View 
+            android:layout_width="20dp"
+            android:layout_height="40dp"/>
+        <Button 
+            android:id="@+id/login"
+            android:layout_width="160dp"
+            android:layout_height="40dp"
+            android:background="@drawable/button_signin_shape"
+            android:text="登录"
+            android:textSize="16sp"
+            android:textColor="#a8a8a8"/>
+    </LinearLayout>
+    
+    <LinearLayout 
+        android:id="@+id/ll_guide"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/viewbtn"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true">
+        
+        <ImageView 
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:src="@drawable/slide_dot"/>
+        
+        <ImageView 
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:src="@drawable/slide_dot"/>
+        
+        <ImageView 
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:src="@drawable/slide_dot"/>
+        
+        <ImageView 
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:src="@drawable/slide_dot"/>
+        
+    </LinearLayout>
+    
+    <TextView 
+        android:id="@+id/text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/ll_guide"
+        android:textSize="14sp"
+        android:textColor="#ffffff"/>
+    
+    <TextView 
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_above="@id/text2"
+        android:textSize="16sp"
+        android:textColor="#ffffff"/>
+
+</RelativeLayout>

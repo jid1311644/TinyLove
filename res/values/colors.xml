@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="themeColor">#3ebac4</color>
+    <color name="mainColor">#ffffff</color>
+    <color name="lineColor">#c4c4c4</color>
+    <color name="backColor">#f4f8f9</color>
+    <color name="maleColor">#3cc5ff</color>
+    <color name="femaleColor">#ff5164</color>
+    <color name="pressColor">#e6e6e6</color>
+    <color name="textColor">#707070</color>
+    <color name="anniTextColor">#494951</color>
+    
+    <color name="eventsColor1">#fd907c</color>
+    <color name="eventsColor2">#f9aa4b</color>
+    <color name="eventsColor3">#fdeba1</color>
+    <color name="eventsColor4">#c8f076</color>
+    <color name="eventsColor5">#60d8cc</color>
+    <color name="eventsColor6">#39b4f0</color>
+    <color name="eventsColor7">#a394fd</color>
+    
+</resources>

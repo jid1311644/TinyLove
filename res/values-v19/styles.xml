@@ -1,0 +1,19 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- API 11 theme customizations can go here. -->
+    </style>
+    
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 不显示Title Bar -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 设置导航栏和状态栏成半透明的 -->
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+</resources>

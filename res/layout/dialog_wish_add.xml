@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#ffffff"
+    tools:context="com.example.tinylove.WishAddDialog" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="新建情侣愿望"
+        android:textColor="@color/themeColor"
+        android:textSize="18sp" />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/themeColor"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    
+    <EditText 
+        android:id="@+id/wish_add_content"
+        android:layout_width="280dp"
+        android:layout_height="200dp"
+        android:gravity="top"
+        android:padding="10dp"
+        android:hint="在这里输入你们的愿望"
+        android:singleLine="false"
+        android:inputType="textMultiLine"
+        android:scrollHorizontally="false"
+        android:background="@drawable/login_btn_nopress"
+        android:textSize="12sp"
+        android:textColor="@color/anniTextColor"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/pressColor"/>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView 
+	        android:id="@+id/wish_add_ok"
+	        android:layout_width="match_parent"
+	        android:layout_weight="1"
+	        android:layout_height="40dp"
+	        android:gravity="center"
+	        android:text="确  定"
+	        android:textSize="14sp"
+	        android:textColor="@color/maleColor"
+	        android:background="@drawable/btn_selector"
+	        android:clickable="true"/>
+        <View 
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/pressColor"/>
+        <TextView 
+	        android:id="@+id/wish_add_cancel"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="取  消"
+	        android:textSize="14sp"
+	        android:textColor="@color/femaleColor"
+	        android:background="@drawable/btn_selector"
+	        android:clickable="true"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/btn_selector">
+    
+    <ImageView 
+        android:id="@+id/wish_item_1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/wish"/>
+    
+    <View 
+        android:id="@+id/wish_item_2"
+        android:layout_width="1dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_toEndOf="@id/wish_item_1"
+        android:layout_centerVertical="true"
+        android:background="@color/pressColor"/>
+    
+    <ImageView 
+        android:id="@+id/wish_item_4_finish"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/wish_finish_mark"/>
+    
+    <TextView
+        android:id="@+id/wish_item_3_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_toRightOf="@id/wish_item_2"
+        android:layout_toLeftOf="@id/wish_item_4_finish"
+        android:textColor="@color/anniTextColor"
+        android:textSize="12sp"
+        android:text="愿望"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/pressColor"/>
+
+</RelativeLayout>

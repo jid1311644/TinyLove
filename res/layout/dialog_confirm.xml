@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#ffffff"
+    tools:context="com.example.tinylove.ConfirmDialog" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="20dp"
+        android:gravity="center_vertical"
+        android:text="Confirm"
+        android:textColor="@color/themeColor"
+        android:textSize="18sp" />
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/themeColor"/>
+    
+    <TextView 
+        android:id="@+id/confirm_content"
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:gravity="center_vertical"
+        android:textColor="@color/anniTextColor"
+        android:textSize="14sp"/>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/pressColor"/>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <TextView 
+	        android:id="@+id/confirm_ok"
+	        android:layout_width="match_parent"
+	        android:layout_weight="1"
+	        android:layout_height="40dp"
+	        android:gravity="center"
+	        android:text="确  定"
+	        android:textSize="14sp"
+	        android:textColor="@color/maleColor"
+	        android:background="@drawable/btn_selector"
+	        android:clickable="true"/>
+        <View 
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:background="@color/pressColor"/>
+        <TextView 
+	        android:id="@+id/confirm_cancel"
+	        android:layout_width="match_parent"
+	        android:layout_height="40dp"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="取  消"
+	        android:textSize="14sp"
+	        android:textColor="@color/femaleColor"
+	        android:background="@drawable/btn_selector"
+	        android:clickable="true"/>
+    </LinearLayout>
+
+</LinearLayout>

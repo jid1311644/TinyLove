@@ -1,0 +1,175 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/themeColor"
+    tools:context="com.example.tinylove.SupplyActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:background="@color/themeColor">
+        <ImageView
+            android:id="@+id/supply_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:src="@drawable/icon_back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="我的TA"
+            android:layout_centerInParent="true"/>
+        <TextView 
+            android:id="@+id/supply_next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:text="完成"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"/>
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/backColor"/>
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+        
+        <LinearLayout 
+            android:id="@+id/supply_rll1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            
+            <ImageView 
+                android:id="@+id/supply_change_head"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/user_head_female"
+                android:clickable="true"/>
+            <View 
+                android:layout_width="4dp"
+                android:layout_height="match_parent"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="头像"
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+            <View 
+                android:layout_width="40dp"
+                android:layout_height="match_parent"/>
+            
+            <RadioGroup 
+                android:id="@+id/supply_rg_sex"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+                <RadioButton 
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/supply_male"
+                    android:button="@null"
+                    android:background="@drawable/reg_male"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:text="男"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+                <View 
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"/>
+                <RadioButton 
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:id="@+id/supply_female"
+                    android:button="@null"
+                    android:background="@drawable/reg_female_hover"
+                    android:checked="true"/>
+                <TextView 
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:text="女"
+                    android:textSize="16sp"
+                    android:textColor="#000000"/>
+            </RadioGroup>
+        </LinearLayout>
+        
+        <LinearLayout 
+            android:id="@+id/supply_rll2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/supply_rll1"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+            <ImageView 
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/user_name"/>
+            <View 
+                android:layout_width="6dp"
+                android:layout_height="match_parent"/>
+            <View 
+                android:layout_width="1dp"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:background="@color/lineColor"/>
+            <View 
+                android:layout_width="6dp"
+                android:layout_height="match_parent"/>
+            <EditText 
+                android:id="@+id/supply_name"
+                android:layout_width="match_parent"
+                android:layout_height="24dp"
+                android:maxLength="20"
+                android:background="@null"
+                android:hint="昵称"
+                android:textSize="16sp"/>
+        </LinearLayout>
+        
+        <View 
+            android:id="@+id/supply_name_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_below="@id/supply_rll2"
+            android:background="@color/lineColor"/>
+
+            
+        
+    </RelativeLayout>
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backColor"/>
+
+</LinearLayout>

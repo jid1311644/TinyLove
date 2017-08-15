@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="500dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    tools:context="com.example.tinylove.AboutUsDialog" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="关于我们"
+        android:textColor="@color/themeColor"
+        android:textSize="18sp" />
+	<View android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="@color/themeColor"/>
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:scrollbars="none">
+        <TextView 
+		    android:id="@+id/about_us_content"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:padding="10dp"
+		    android:text="提示内容"
+		    android:textColor="@color/anniTextColor"
+		    android:textSize="14sp"/>
+    </ScrollView>
+	
+
+</LinearLayout>
