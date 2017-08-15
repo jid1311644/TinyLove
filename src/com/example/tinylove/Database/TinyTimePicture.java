@@ -14,7 +14,8 @@ public class TinyTimePicture {
 			"CREATE TABLE `tiny_time` ("
 			+ "`user_name` varchar(50) NOT NULL,"
 			+ "`time_picture` varchar(300) NOT NULL,"
-			+ "PRIMARY KEY (`user_name`,`time_picture`),"
+			+ "`time_content` varchar(500) NOT NULL,"
+			+ "PRIMARY KEY (`user_name`,`time_picture`,`time_content`),"
 			+ "FOREIGN KEY (`user_name`) REFERENCES `tiny_user` (`user_name`)"
 			+ ")";
 	
